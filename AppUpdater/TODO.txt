@@ -1,0 +1,5 @@
+
+1. Rewrite for better use with UNC (network naming).
+2. Better objects and updateing (switch to file streaming).
+3. Dynamic properties for updating.
+4. xml file check instead of direct file check for quicker updates.

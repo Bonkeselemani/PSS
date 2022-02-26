@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="Cell_Line_Production" targetNamespace="http://tempuri.org/Cell_Line_Production.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/Cell_Line_Production.xsd" xmlns:mstns="http://tempuri.org/Cell_Line_Production.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Cell_Line_Production" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="element1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ReportTitle" type="xs:string" minOccurs="0" />
+							<xs:element name="DateRange" type="xs:string" minOccurs="0" />
+							<xs:element name="Group_Desc" type="xs:string" minOccurs="0" />
+							<xs:element name="Line_Number" type="xs:string" minOccurs="0" />
+							<xs:element name="User_FullName" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipType" type="xs:string" minOccurs="0" />
+							<xs:element name="Model_Desc" type="xs:string" minOccurs="0" />
+							<xs:element name="Device_ID" type="xs:integer"></xs:element>
+							<xs:element name="Group_ID" type="xs:integer" minOccurs="0" />
+							<xs:element name="Line_ID" type="xs:integer" minOccurs="0" />
+							<xs:element name="Pallet_ShipType" type="xs:integer" minOccurs="0" />
+							<xs:element name="User_ID" type="xs:integer" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,2357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.0.9955</ProductVersion>
+    <SchemaVersion>1.0</SchemaVersion>
+    <ProjectGuid>{CE453774-4F79-41A5-8038-64E6DA7663D5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>PSS.Net</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>PSS</RootNamespace>
+    <StartupObject>PSS.Gui.MainWin.MainWin</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Bin\Debug\1.0.0.0\</OutputPath>
+    <DocumentationFile>PSS.Net.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Bin\Release\1.0.0.0\</OutputPath>
+    <DocumentationFile>PSS.Net.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PSS.NET StandAlone\UnderWarrantyNET1\UnderWarrantyNET1.csproj">
+      <Project>{205c23ee-5756-48c5-9fcc-88b2f3e39ebd}</Project>
+      <Name>UnderWarrantyNET1</Name>
+    </ProjectReference>
+    <ProjectReference Include="AppUpdater\AppUpdater.vbproj">
+      <Name>AppUpdater</Name>
+      <Project>{C62CBFED-755D-4287-8B42-EE8A90C5930F}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="PSS.Data\PSS.Data.vbproj">
+      <Project>{d27626df-992f-4906-8d36-88c9c3eccdf8}</Project>
+      <Name>PSS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="PSS.Gui\PSS.Gui.vbproj">
+      <Name>PSS.Gui</Name>
+      <Project>{279BDA6D-E870-40C1-83F2-D223E0D61087}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="AxInterop.AcroPDFLib">
+      <Name>AxInterop.AcroPDFLib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.CRVIEWER9Lib">
+      <Name>AxInterop.CRVIEWER9Lib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\AxInterop.CRVIEWER9Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSMask">
+      <Name>AxInterop.MSMask</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\AxInterop.MSMask.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.TrueDBGrid70">
+      <Name>AxInterop.TrueDBGrid70</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\AxInterop.TrueDBGrid70.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.4.5.2, Version=4.5.20213.532, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.Win.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1List.4.5.2, Version=4.5.20213.532, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.Win.C1List.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2, Version=4.5.20213.532, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.Win.C1TrueDBGrid.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="CONN">
+      <Name>CONN</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\CONN.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <Name>CrystalDecisions.CrystalReports.Engine</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\2.0\managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <Name>CrystalDecisions.ReportSource</Name>
+      <HintPath>P:\Public\IT\References\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>P:\Public\IT\References\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <Name>CrystalDecisions.Windows.Forms</Name>
+      <HintPath>P:\Public\IT\References\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="dbProvider">
+      <Name>dbProvider</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\dbProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="DBQuery">
+      <Name>DBQuery</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\DBQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EncDec">
+      <Name>EncDec</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\EncDec.dll</HintPath>
+    </Reference>
+    <Reference Include="General">
+      <Name>General</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\General.dll</HintPath>
+    </Reference>
+    <Reference Include="GuiLib">
+      <Name>GuiLib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\GuiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcrobatAccessLib">
+      <Name>Interop.AcrobatAccessLib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.AcrobatAccessLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib">
+      <Name>Interop.AcroPDFLib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CRAXDRT">
+      <Name>Interop.CRAXDRT</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.CRAXDRT.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CRVIEWER9Lib">
+      <Name>Interop.CRVIEWER9Lib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.CRVIEWER9Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <Name>Interop.Excel</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSMask">
+      <Name>Interop.MSMask</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.MSMask.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <Name>Interop.Office</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.TrueDBGrid70">
+      <Name>Interop.TrueDBGrid70</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.TrueDBGrid70.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <Name>Interop.VBIDE</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Odbc">
+      <Name>Microsoft.Data.Odbc</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Microsoft.Data.Odbc.dll</HintPath>
+    </Reference>
+    <Reference Include="MyLib">
+      <Name>MyLib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\MyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <Name>MySql.Data</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpZipLib">
+      <Name>SharpZipLib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Utilib">
+      <Name>Utilib</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Utilib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Global.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\HighLight.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Registry.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\UpdateListner.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Crystal Reports\Cell Line Production Push.vb">
+      <DependentUpon>Cell Line Production Push.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Crystal Reports\Cell Line Production.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cell Line Production.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Crystal Reports\frmDataView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crystal Reports\frmReportParameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel Reports\frmExcelReportParameters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Misc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\About\AboutWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\Cellular\frmCelAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\Cellular\frmProdSysInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\Employee Incentive Program\frmEmpIncentive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\Employee Incentive Program\frmGameStopMessagingIncentivePrg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\Employee Incentive Program\frmPIPModelUPH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\frmChangeModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\Messaging\frmEdit_SKU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Admin Functions\Messaging\frmMoveTray.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Audit\frmDeviceBillingHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Auto Bill\frmBillGroups.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Auto Bill\frmBillGroupsAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Auto Bill\frmModelTarget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Auto Bill\frmSpecialBillingDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Auto Bill\ucABTemplate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\AwaitingParts\frmAwaitingParts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AwaitingParts\frmAwaitingParts_DNU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\BillCodes\BillCodeEditWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\BillCodes\BillCodeWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\BillCustMAP\mapCustBill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Billing\BillingWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Billing\frmBillcodesSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Billing\frmDBRReason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Brightpoint\frmBrightpointOperations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Codes\ASCPriceCodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Codes\FailCodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Codes\frmManageManufCodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Codes\LaborLvl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Codes\RepairCodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CompanyAdmin\CompAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CompanyAdmin\CompAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Cost Center\frmCostCenterTimeTracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Cost Center\frmDashBoardTimeCardEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Cost Center\frmScanDevicesIntoCostCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Customer Service\frmPackingSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmCellModelFactor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmContBillAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmCustMaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmCustMaintNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmCustMaintSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmExceptionBillItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmLocOptInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CustomerMaintenance\frmRURPriceException.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DCII\frmDCAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DCII\frmDCBuildShipBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DCII\frmDCCollectCustInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DCII\frmDCDockshipping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DCII\frmDCRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DCII\frmDCSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DCII\frmDCShipBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Disposition\frmDisposition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DocumentMap\frmDocMapFileLoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DocumentMap\frmDocumentMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Edits\frmEdit_BillMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Edits\SkuEdit_Messaging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Gamestop\frmGamestopOperations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\GeneralObjects\objJournal.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\GeneralObjects\objShift.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\GenericProcess\frmBuildShipLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\GenericProcess\frmGPCreateWO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\GenericProcess\frmGPProdRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\GenericProcess\frmGPProduceLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Genesis\frmBuildShipLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Genesis\frmProduceLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Genesis\frmReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Genesis\SharedFunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\Group_Line_Side_Bench\frmGrpLineSideBenchMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Group_Line_Side_Bench\frmMachineModelMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\HideBillCodes\frmHideBillCodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\HideBillCodes\frmHideBillCodesCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\HR\frmIncentiveData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\HR\frmLegiantEEData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmAvailForProdRpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmCreateCycleCountVarianceFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmPartRelated.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmReplenishNavFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmReplenishPickTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmReplenishRecover.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmSHopFloorOnHandRpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\frmTrackInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Jabil\frmBuildShipBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Jabil\frmReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\LG\frmCollectLGWrtyCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\MainWin\MainWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\MainWin\MenuMain.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\MainWin\StatusMain.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\MainWin\WorkArea.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\ManufWarrantyInfo\frmCollectWrtyDateCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Messaging\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmAMDBRManifest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmAmsLevel3Map.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmAquisModelSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmAquisProdRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmAquisWHRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmCustModPSSModMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmMessConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmMessDemandData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmMessEditDevices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmMessLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmMessProdShip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmMessReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmMessWO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmSkyTelBuildShipBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmSkyTelLoadASN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmSkyTelRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\frmUserSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Messaging\MessagingFunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\ModManuf\AddEditModelFamily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ModManuf\ManageModelCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ModManuf\Model.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ModManuf\ModManufWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ModManuf\ProdGrp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ModManuf\RptGrp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\MotoAscWrty\MotoAsc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola M-Claims\frmAddSJUG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola M-Claims\frmAddSofVer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola M-Claims\frmCollectMClaimData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola M-Claims\frmCollectMotorolaWrtyCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola M-Claims\frmCollectMotoWrtyData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola M-Claims\frmEditClaims.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola M-Claims\frmMotoClaimReconcile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola Sub-contract\Fedex.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola Sub-contract\frmMotoSubContShipping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola Sub-contract\frmReprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola Sub-contract\frmRpt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola Sub-contract\frmSelectOverpack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola Sub-contract\frmSelectPallett.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Motorola Sub-contract\frmShipPartialPalletts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Native Instruments\frmBilling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Native Instruments\frmRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Native Instruments\frmReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Native Instruments\frmShip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\NoteBoard\frmMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\NoteBoard\frmNoteBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\OrderEntry\frmOrderEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\OrderEntry\frmOrderEntrySelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\OrderEntry\mtnPricingGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pantech\Accessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pantech\frmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pantech\frmCustServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pantech\frmPantechLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pantech\frmReceiving_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pantech\frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pantech\frmShipping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PartsMap\PartsMapEditWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PartsMap\PartsMapWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Peek\frmPeekKitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Peek\frmPeekRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Peek\PeekBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\PreLoad\frmPreloadCELL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreLoad\frmPreload_Select_Cust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreLoad\frmPreload_USAMobility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreLoad\frmPreload_Workorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreTest\frmAssignCostCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreTest\frmPreTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreTest\frmPretestCamera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreTest\frmPretestCamera35mm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PreTest\frmReturnCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pricing\frmSetAvgPartCostGoal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Pricing\PricingWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Production\frmProductivityTracker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Production\frmRefurbAudit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Production\frmWSProductivityTracker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Programming\frmProgramming.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Quality Control\frmGetManufactureDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Quality Control\frmQC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Quality Control\frmQC_Codes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Receiving_CELL\frmReceivingCELL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Receiving_CELL\frm_custspecREC_CellStar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Receiving_CELL\frm_custspecTRIAGE_CellStar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Receiving_CELL\NEW_CellReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Receiving_CELL\ucCustomer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Receiving_CELL\ucGrid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Receiving_CELL\ucRMASpecific.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\clsPREdefine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\DNURec_ DeviceChangeSample.vb">
+      <DependentUpon>DNURec_ DeviceChangeSample.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Gui\Recieving\DNURec_ DeviceChangeSample_OLD.vb">
+      <DependentUpon>DNURec_ DeviceChangeSample_OLD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmATCLE_CellDeviceInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmATCLE_Receiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmCellDeviceInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmCellDeviceInfoMotorola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmCellLoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmCSrec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmEndUserInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmEndUserUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmFileRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmMOTORL_CellDeviceInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmMOTORL_Receiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmMOTO_CellDeviceInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmMOTO_Receiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmPREdefineRMArec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmRecEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmSelectRecType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmStageProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmStaging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmTechScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmTrayTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmUSADataLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\frmWebUserInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\Rec_ DeviceChange1.vb">
+      <DependentUpon>Rec_ DeviceChange.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Gui\Recieving\Rec_ DeviceChangeSample.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\Rec_ DeviceChangeSample_OLD.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\Recieving\Rec_ DeviceChange_031606.vb">
+      <DependentUpon>Rec_ DeviceChange_031606.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Gui\Recieving\ReportForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmAdminRevenueRpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmCompare_Consumed_AutoBilled_Revenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmGenRptCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmNavisionReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmQCReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmRepairHistoryRpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmRURRTMCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmSelectedValue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\frmUSAMobWOReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\ReportViewer\RptViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Samsung Warranty Info\frmCollectSSWrytData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Search\CellSearchWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Search\frmAdminSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Search\frmBetterSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Search\frmCountDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Search\SearchWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SecurityAdmin\SecurityAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Security\SecurityWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Sensus\frmDisplayData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Sensus\frmSensusAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Sensus\frmSensusBuildShipPallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Sensus\frmSensusPackingList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Sensus\frmSensusSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmAutoBuildRWPallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmBulkShipping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmCellShipPallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmCellShipPallet_Generic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmDscPalletBuild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmFGTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmFOLOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmPalletBuild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmProduceLot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmShippingFix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmShippingLocGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Shipping\frmShippingStage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Sonitrol\frmSonitrolReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmAdminCellstar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmBillcodeConsumption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmCellAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmCellStarPartNumUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmChangeSN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmCreateConsumptionFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmResendCellstarXMLFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmUpdateInvoiceValues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmValidateRejects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SpecialProcess\frmWOdata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Support\CustomerWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Support\frmSupManufModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\frmCollectPartAndRemapBOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxAdminTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxCollectAccessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxCrystalReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxdataStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxEditModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxExcelReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\syxImageLibrary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxKitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxPartsConsumption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxPartsReceiving.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxProduce.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxQC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxShipping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxTechBilling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\syxtriage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Syx\SyxWIPTranser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Technician Tools\CreatePSSISNs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Technician Tools\frmCollectRepairFailCodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Technician Tools\frmLogicTrayAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\AccessoryStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmCompletedCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmMainLens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmMotoComponent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmNewTech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmNewTechData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmNewTechDataINPUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmNEWTechScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TechScreen\frmTechScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMIRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMIRepairBilling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMIReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMISharedFunc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMIShipReturnLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMISShipProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMI_OBA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TMI1\TMI_QC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\AssignBateryCover.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmAsignWHBoxToWHLoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmBERScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmBuildAccessShipBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmBuildShipPallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmCCRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmDBRVerify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmManifestBERBoxes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmProdShip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmRecExceptionUnits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmSoftwareRefurbish.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmTFOOBA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmTFRF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmWHFillingOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmWHManifest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\frmWorkStationTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TracFone\TFBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmAssignAwaitParts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmChangePalletModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmDockReceive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmDockShipping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmOrderfulfilment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmPrintUPCLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmSendPalletPackingListFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmStorage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmWarehouseRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmWarehouseRec_OEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Warehouse\frmWHRecWithoutFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WeightFactorAdmin\frmWFadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmAssignWIPOwnership.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmConditionalBucket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmProcessFlow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmReadyToTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmTemporarilyTransferWIPOwnership.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmTransferDevices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmWIPReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\WIP\frmWIPReports_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules\BillCode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\Billing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\ModManuf.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\MotoAsc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\PartsMap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\Pricing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\Search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\Security.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Crystal Reports\Cell Line Production.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cell Line Production.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Images\Down Arrow 1.gif" />
+    <Content Include="Images\Left Arrow 1.gif" />
+    <Content Include="Images\Right Arrow 1.gif" />
+    <Content Include="Images\Up Arrow 1.gif" />
+    <EmbeddedResource Include="Application.ico" />
+    <EmbeddedResource Include="Crystal Reports\Cell Line Production Push.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cell Line Production Push.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Reports\frmDataView.resx">
+      <DependentUpon>frmDataView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal Reports\frmReportParameters.resx">
+      <DependentUpon>frmReportParameters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel Reports\frmExcelReportParameters.resx">
+      <DependentUpon>frmExcelReportParameters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\About\AboutWin.resx">
+      <DependentUpon>AboutWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\Cellular\frmCelAdmin.resx">
+      <DependentUpon>frmCelAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\Cellular\frmProdSysInput.resx">
+      <DependentUpon>frmProdSysInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\Employee Incentive Program\frmEmpIncentive.resx">
+      <DependentUpon>frmEmpIncentive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\Employee Incentive Program\frmGameStopMessagingIncentivePrg.resx">
+      <DependentUpon>frmGameStopMessagingIncentivePrg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\Employee Incentive Program\frmPIPModelUPH.resx">
+      <DependentUpon>frmPIPModelUPH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\frmChangeModel.resx">
+      <DependentUpon>frmChangeModel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\Messaging\frmEdit_SKU.resx">
+      <DependentUpon>frmEdit_SKU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Admin Functions\Messaging\frmMoveTray.resx">
+      <DependentUpon>frmMoveTray.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Audit\frmDeviceBillingHistory.resx">
+      <DependentUpon>frmDeviceBillingHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Auto Bill\frmBillGroups.resx">
+      <DependentUpon>frmBillGroups.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Auto Bill\frmBillGroupsAdmin.resx">
+      <DependentUpon>frmBillGroupsAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Auto Bill\frmModelTarget.resx">
+      <DependentUpon>frmModelTarget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Auto Bill\frmSpecialBillingDetails.resx">
+      <DependentUpon>frmSpecialBillingDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Auto Bill\ucABTemplate.resx">
+      <DependentUpon>ucABTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AwaitingParts\frmAwaitingParts.resx">
+      <DependentUpon>frmAwaitingParts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AwaitingParts\frmAwaitingParts_DNU.resx">
+      <DependentUpon>frmAwaitingParts_DNU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\BillCodes\BillCodeEditWin.resx">
+      <DependentUpon>BillCodeEditWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\BillCodes\BillCodeWin.resx">
+      <DependentUpon>BillCodeWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\BillCustMAP\mapCustBill.resx">
+      <DependentUpon>mapCustBill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Billing\BillingWin.resx">
+      <DependentUpon>BillingWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Billing\frmBillcodesSelection.resx">
+      <DependentUpon>frmBillcodesSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Billing\frmDBRReason.resx">
+      <DependentUpon>frmDBRReason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Brightpoint\frmBrightpointOperations.resx">
+      <DependentUpon>frmBrightpointOperations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Codes\ASCPriceCodes.resx">
+      <DependentUpon>ASCPriceCodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Codes\FailCodes.resx">
+      <DependentUpon>FailCodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Codes\frmManageManufCodes.resx">
+      <DependentUpon>frmManageManufCodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Codes\LaborLvl.resx">
+      <DependentUpon>LaborLvl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Codes\RepairCodes.resx">
+      <DependentUpon>RepairCodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CompanyAdmin\CompAddress.resx">
+      <DependentUpon>CompAddress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CompanyAdmin\CompAdmin.resx">
+      <DependentUpon>CompAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Cost Center\frmCostCenterTimeTracking.resx">
+      <DependentUpon>frmCostCenterTimeTracking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Cost Center\frmDashBoardTimeCardEdit.resx">
+      <DependentUpon>frmDashBoardTimeCardEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Cost Center\frmScanDevicesIntoCostCenter.resx">
+      <DependentUpon>frmScanDevicesIntoCostCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Customer Service\frmPackingSlip.resx">
+      <DependentUpon>frmPackingSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmCellModelFactor.resx">
+      <DependentUpon>frmCellModelFactor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmContBillAdmin.resx">
+      <DependentUpon>frmContBillAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmCustMaint.resx">
+      <DependentUpon>frmCustMaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmCustMaintNew.resx">
+      <DependentUpon>frmCustMaintNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmCustMaintSearch.resx">
+      <DependentUpon>frmCustMaintSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmExceptionBillItems.resx">
+      <DependentUpon>frmExceptionBillItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmLocOptInfo.resx">
+      <DependentUpon>frmLocOptInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CustomerMaintenance\frmRURPriceException.resx">
+      <DependentUpon>frmRURPriceException.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DCII\frmDCAdmin.resx">
+      <DependentUpon>frmDCAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DCII\frmDCBuildShipBox.resx">
+      <DependentUpon>frmDCBuildShipBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DCII\frmDCCollectCustInfo.resx">
+      <DependentUpon>frmDCCollectCustInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DCII\frmDCDockshipping.resx">
+      <DependentUpon>frmDCDockshipping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DCII\frmDCRec.resx">
+      <DependentUpon>frmDCRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DCII\frmDCSearch.resx">
+      <DependentUpon>frmDCSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DCII\frmDCShipBox.resx">
+      <DependentUpon>frmDCShipBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Disposition\frmDisposition.resx">
+      <DependentUpon>frmDisposition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DocumentMap\frmDocMapFileLoc.resx">
+      <DependentUpon>frmDocMapFileLoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DocumentMap\frmDocumentMap.resx">
+      <DependentUpon>frmDocumentMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Edits\frmEdit_BillMap.resx">
+      <DependentUpon>frmEdit_BillMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Edits\SkuEdit_Messaging.resx">
+      <DependentUpon>SkuEdit_Messaging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Gamestop\frmGamestopOperations.resx">
+      <DependentUpon>frmGamestopOperations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\GenericProcess\frmBuildShipLot.resx">
+      <DependentUpon>frmBuildShipLot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\GenericProcess\frmGPCreateWO.resx">
+      <DependentUpon>frmGPCreateWO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\GenericProcess\frmGPProdRec.resx">
+      <DependentUpon>frmGPProdRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\GenericProcess\frmGPProduceLot.resx">
+      <DependentUpon>frmGPProduceLot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Genesis\frmBuildShipLot.resx">
+      <DependentUpon>frmBuildShipLot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Genesis\frmProduceLot.resx">
+      <DependentUpon>frmProduceLot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Genesis\frmReceiving.resx">
+      <DependentUpon>frmReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Group_Line_Side_Bench\frmGrpLineSideBenchMap.resx">
+      <DependentUpon>frmGrpLineSideBenchMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Group_Line_Side_Bench\frmMachineModelMap.resx">
+      <DependentUpon>frmMachineModelMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\HideBillCodes\frmHideBillCodes.resx">
+      <DependentUpon>frmHideBillCodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\HideBillCodes\frmHideBillCodesCustomer.resx">
+      <DependentUpon>frmHideBillCodesCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\HR\frmIncentiveData.resx">
+      <DependentUpon>frmIncentiveData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\HR\frmLegiantEEData.resx">
+      <DependentUpon>frmLegiantEEData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmAvailForProdRpt.resx">
+      <DependentUpon>frmAvailForProdRpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmCreateCycleCountVarianceFile.resx">
+      <DependentUpon>frmCreateCycleCountVarianceFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmPartRelated.resx">
+      <DependentUpon>frmPartRelated.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmPassword.resx">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmReplenishNavFile.resx">
+      <DependentUpon>frmReplenishNavFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmReplenishPickTicket.resx">
+      <DependentUpon>frmReplenishPickTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmReplenishRecover.resx">
+      <DependentUpon>frmReplenishRecover.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmSHopFloorOnHandRpt.resx">
+      <DependentUpon>frmSHopFloorOnHandRpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\frmTrackInventory.resx">
+      <DependentUpon>frmTrackInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Jabil\frmBuildShipBox.resx">
+      <DependentUpon>frmBuildShipBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Jabil\frmReceiving.resx">
+      <DependentUpon>frmReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\LG\frmCollectLGWrtyCode.resx">
+      <DependentUpon>frmCollectLGWrtyCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\MainWin\MainWin.resx">
+      <DependentUpon>MainWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\MainWin\MenuMain.resx">
+      <DependentUpon>MenuMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\MainWin\StatusMain.resx">
+      <DependentUpon>StatusMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\MainWin\WorkArea.resx">
+      <DependentUpon>WorkArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ManufWarrantyInfo\frmCollectWrtyDateCode.resx">
+      <DependentUpon>frmCollectWrtyDateCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmAMDBRManifest.resx">
+      <DependentUpon>frmAMDBRManifest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmAmsLevel3Map.resx">
+      <DependentUpon>frmAmsLevel3Map.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmAquisModelSetup.resx">
+      <DependentUpon>frmAquisModelSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmAquisProdRec.resx">
+      <DependentUpon>frmAquisProdRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmAquisWHRec.resx">
+      <DependentUpon>frmAquisWHRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmCustModPSSModMap.resx">
+      <DependentUpon>frmCustModPSSModMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmMessConsole.resx">
+      <DependentUpon>frmMessConsole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmMessDemandData.resx">
+      <DependentUpon>frmMessDemandData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmMessEditDevices.resx">
+      <DependentUpon>frmMessEditDevices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmMessLabel.resx">
+      <DependentUpon>frmMessLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmMessProdShip.resx">
+      <DependentUpon>frmMessProdShip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmMessReports.resx">
+      <DependentUpon>frmMessReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmMessWO.resx">
+      <DependentUpon>frmMessWO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmSkyTelBuildShipBox.resx">
+      <DependentUpon>frmSkyTelBuildShipBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmSkyTelLoadASN.resx">
+      <DependentUpon>frmSkyTelLoadASN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmSkyTelRec.resx">
+      <DependentUpon>frmSkyTelRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Messaging\frmUserSelection.resx">
+      <DependentUpon>frmUserSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ModManuf\AddEditModelFamily.resx">
+      <DependentUpon>AddEditModelFamily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ModManuf\ManageModelCriteria.resx">
+      <DependentUpon>ManageModelCriteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ModManuf\Model.resx">
+      <DependentUpon>Model.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ModManuf\ModManufWin.resx">
+      <DependentUpon>ModManufWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ModManuf\ProdGrp.resx">
+      <DependentUpon>ProdGrp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ModManuf\RptGrp.resx">
+      <DependentUpon>RptGrp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\MotoAscWrty\MotoAsc.resx">
+      <DependentUpon>MotoAsc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola M-Claims\frmAddSJUG.resx">
+      <DependentUpon>frmAddSJUG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola M-Claims\frmAddSofVer.resx">
+      <DependentUpon>frmAddSofVer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola M-Claims\frmCollectMClaimData.resx">
+      <DependentUpon>frmCollectMClaimData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola M-Claims\frmCollectMotorolaWrtyCode.resx">
+      <DependentUpon>frmCollectMotorolaWrtyCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola M-Claims\frmCollectMotoWrtyData.resx">
+      <DependentUpon>frmCollectMotoWrtyData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola M-Claims\frmEditClaims.resx">
+      <DependentUpon>frmEditClaims.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola M-Claims\frmMotoClaimReconcile.resx">
+      <DependentUpon>frmMotoClaimReconcile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola Sub-contract\frmMotoSubContShipping.resx">
+      <DependentUpon>frmMotoSubContShipping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola Sub-contract\frmReprint.resx">
+      <DependentUpon>frmReprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola Sub-contract\frmRpt.resx">
+      <DependentUpon>frmRpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola Sub-contract\frmSelectOverpack.resx">
+      <DependentUpon>frmSelectOverpack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola Sub-contract\frmSelectPallett.resx">
+      <DependentUpon>frmSelectPallett.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Motorola Sub-contract\frmShipPartialPalletts.resx">
+      <DependentUpon>frmShipPartialPalletts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Native Instruments\frmBilling.resx">
+      <DependentUpon>frmBilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Native Instruments\frmRec.resx">
+      <DependentUpon>frmRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Native Instruments\frmReports.resx">
+      <DependentUpon>frmReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Native Instruments\frmShip.resx">
+      <DependentUpon>frmShip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\NoteBoard\frmMsgBox.resx">
+      <DependentUpon>frmMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\NoteBoard\frmNoteBoard.resx">
+      <DependentUpon>frmNoteBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\OrderEntry\frmOrderEntry.resx">
+      <DependentUpon>frmOrderEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\OrderEntry\frmOrderEntrySelect.resx">
+      <DependentUpon>frmOrderEntrySelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\OrderEntry\mtnPricingGroup.resx">
+      <DependentUpon>mtnPricingGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pantech\Accessories.resx">
+      <DependentUpon>Accessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pantech\frmAdmin.resx">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pantech\frmCustServices.resx">
+      <DependentUpon>frmCustServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pantech\frmPantechLabel.resx">
+      <DependentUpon>frmPantechLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pantech\frmReceiving_1.resx">
+      <DependentUpon>frmReceiving_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pantech\frmSearch.resx">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pantech\frmShipping.resx">
+      <DependentUpon>frmShipping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PartsMap\PartsMapEditWin.resx">
+      <DependentUpon>PartsMapEditWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PartsMap\PartsMapWin.resx">
+      <DependentUpon>PartsMapWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Peek\frmPeekKitting.resx">
+      <DependentUpon>frmPeekKitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Peek\frmPeekRec.resx">
+      <DependentUpon>frmPeekRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreLoad\frmPreloadCELL.resx">
+      <DependentUpon>frmPreloadCELL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreLoad\frmPreload_Select_Cust.resx">
+      <DependentUpon>frmPreload_Select_Cust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreLoad\frmPreload_USAMobility.resx">
+      <DependentUpon>frmPreload_USAMobility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreLoad\frmPreload_Workorder.resx">
+      <DependentUpon>frmPreload_Workorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreTest\frmAssignCostCenter.resx">
+      <DependentUpon>frmAssignCostCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreTest\frmPreTest.resx">
+      <DependentUpon>frmPreTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreTest\frmPretestCamera.resx">
+      <DependentUpon>frmPretestCamera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreTest\frmPretestCamera35mm.resx">
+      <DependentUpon>frmPretestCamera35mm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PreTest\frmReturnCode.resx">
+      <DependentUpon>frmReturnCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pricing\frmSetAvgPartCostGoal.resx">
+      <DependentUpon>frmSetAvgPartCostGoal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Pricing\PricingWin.resx">
+      <DependentUpon>PricingWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Production\frmProductivityTracker.resx">
+      <DependentUpon>frmProductivityTracker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Production\frmRefurbAudit.resx">
+      <DependentUpon>frmRefurbAudit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Production\frmWSProductivityTracker.resx">
+      <DependentUpon>frmWSProductivityTracker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Programming\frmProgramming.resx">
+      <DependentUpon>frmProgramming.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Quality Control\frmGetManufactureDate.resx">
+      <DependentUpon>frmGetManufactureDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Quality Control\frmQC.resx">
+      <DependentUpon>frmQC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Quality Control\frmQC_Codes.resx">
+      <DependentUpon>frmQC_Codes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Receiving_CELL\frmReceivingCELL.resx">
+      <DependentUpon>frmReceivingCELL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Receiving_CELL\frm_custspecREC_CellStar.resx">
+      <DependentUpon>frm_custspecREC_CellStar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Receiving_CELL\frm_custspecTRIAGE_CellStar.resx">
+      <DependentUpon>frm_custspecTRIAGE_CellStar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Receiving_CELL\NEW_CellReceiving.resx">
+      <DependentUpon>NEW_CellReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Receiving_CELL\ucCustomer.resx">
+      <DependentUpon>ucCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Receiving_CELL\ucGrid.resx">
+      <DependentUpon>ucGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Receiving_CELL\ucRMASpecific.resx">
+      <DependentUpon>ucRMASpecific.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\clsPREdefine.resx">
+      <DependentUpon>clsPREdefine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\DNURec_ DeviceChangeSample.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DNURec_ DeviceChangeSample.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\DNURec_ DeviceChangeSample_OLD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DNURec_ DeviceChangeSample_OLD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmATCLE_CellDeviceInfo.resx">
+      <DependentUpon>frmATCLE_CellDeviceInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmATCLE_Receiving.resx">
+      <DependentUpon>frmATCLE_Receiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmCellDeviceInfo.resx">
+      <DependentUpon>frmCellDeviceInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmCellDeviceInfoMotorola.resx">
+      <DependentUpon>frmCellDeviceInfoMotorola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmCellLoc.resx">
+      <DependentUpon>frmCellLoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmCSrec.resx">
+      <DependentUpon>frmCSrec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmEndUserInput.resx">
+      <DependentUpon>frmEndUserInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmEndUserUpdate.resx">
+      <DependentUpon>frmEndUserUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmFileRec.resx">
+      <DependentUpon>frmFileRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmMOTORL_CellDeviceInfo.resx">
+      <DependentUpon>frmMOTORL_CellDeviceInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmMOTORL_Receiving.resx">
+      <DependentUpon>frmMOTORL_Receiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmMOTO_CellDeviceInfo.resx">
+      <DependentUpon>frmMOTO_CellDeviceInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmMOTO_Receiving.resx">
+      <DependentUpon>frmMOTO_Receiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmPREdefineRMArec.resx">
+      <DependentUpon>frmPREdefineRMArec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmRecEdit.resx">
+      <DependentUpon>frmRecEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmReceiving.resx">
+      <DependentUpon>frmReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmSelectRecType.resx">
+      <DependentUpon>frmSelectRecType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmStageProd.resx">
+      <DependentUpon>frmStageProd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmStaging.resx">
+      <DependentUpon>frmStaging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmTechScreen.resx">
+      <DependentUpon>frmTechScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmTrayTransfer.resx">
+      <DependentUpon>frmTrayTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmUSADataLoad.resx">
+      <DependentUpon>frmUSADataLoad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\frmWebUserInput.resx">
+      <DependentUpon>frmWebUserInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\Rec_ DeviceChange.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rec_ DeviceChange1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\Rec_ DeviceChange_031606.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rec_ DeviceChange_031606.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Recieving\ReportForm.resx">
+      <DependentUpon>ReportForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmAdminRevenueRpt.resx">
+      <DependentUpon>frmAdminRevenueRpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmCompare_Consumed_AutoBilled_Revenue.resx">
+      <DependentUpon>frmCompare_Consumed_AutoBilled_Revenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmExcel.resx">
+      <DependentUpon>frmExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmGenRptCriteria.resx">
+      <DependentUpon>frmGenRptCriteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmNavisionReports.resx">
+      <DependentUpon>frmNavisionReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmQCReports.resx">
+      <DependentUpon>frmQCReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmRepairHistoryRpt.resx">
+      <DependentUpon>frmRepairHistoryRpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmRURRTMCheck.resx">
+      <DependentUpon>frmRURRTMCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmSelectedValue.resx">
+      <DependentUpon>frmSelectedValue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\frmUSAMobWOReport.resx">
+      <DependentUpon>frmUSAMobWOReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ReportViewer\RptViewer.resx">
+      <DependentUpon>RptViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Samsung Warranty Info\frmCollectSSWrytData.resx">
+      <DependentUpon>frmCollectSSWrytData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Search\CellSearchWin.resx">
+      <DependentUpon>CellSearchWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Search\frmAdminSearch.resx">
+      <DependentUpon>frmAdminSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Search\frmBetterSearch.resx">
+      <DependentUpon>frmBetterSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Search\frmCountDisplay.resx">
+      <DependentUpon>frmCountDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Search\SearchWin.resx">
+      <DependentUpon>SearchWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SecurityAdmin\SecurityAdmin.resx">
+      <DependentUpon>SecurityAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Security\SecurityWin.resx">
+      <DependentUpon>SecurityWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Sensus\frmDisplayData.resx">
+      <DependentUpon>frmDisplayData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Sensus\frmSensusAdmin.resx">
+      <DependentUpon>frmSensusAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Sensus\frmSensusBuildShipPallet.resx">
+      <DependentUpon>frmSensusBuildShipPallet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Sensus\frmSensusPackingList.resx">
+      <DependentUpon>frmSensusPackingList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Sensus\frmSensusSearch.resx">
+      <DependentUpon>frmSensusSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmAutoBuildRWPallet.resx">
+      <DependentUpon>frmAutoBuildRWPallet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmBulkShipping.resx">
+      <DependentUpon>frmBulkShipping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmCellShipPallet.resx">
+      <DependentUpon>frmCellShipPallet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmCellShipPallet_Generic.resx">
+      <DependentUpon>frmCellShipPallet_Generic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmDscPalletBuild.resx">
+      <DependentUpon>frmDscPalletBuild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmFGTransfer.resx">
+      <DependentUpon>frmFGTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmFOLOT.resx">
+      <DependentUpon>frmFOLOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmPalletBuild.resx">
+      <DependentUpon>frmPalletBuild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmProduceLot.resx">
+      <DependentUpon>frmProduceLot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmShippingFix.resx">
+      <DependentUpon>frmShippingFix.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmShippingLocGroup.resx">
+      <DependentUpon>frmShippingLocGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Shipping\frmShippingStage.resx">
+      <DependentUpon>frmShippingStage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Sonitrol\frmSonitrolReceiving.resx">
+      <DependentUpon>frmSonitrolReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmAdminCellstar.resx">
+      <DependentUpon>frmAdminCellstar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmBillcodeConsumption.resx">
+      <DependentUpon>frmBillcodeConsumption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmCellAdmin.resx">
+      <DependentUpon>frmCellAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmCellStarPartNumUpdate.resx">
+      <DependentUpon>frmCellStarPartNumUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmChangeSN.resx">
+      <DependentUpon>frmChangeSN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmCreateConsumptionFile.resx">
+      <DependentUpon>frmCreateConsumptionFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmResendCellstarXMLFile.resx">
+      <DependentUpon>frmResendCellstarXMLFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmUpdateInvoiceValues.resx">
+      <DependentUpon>frmUpdateInvoiceValues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmValidateRejects.resx">
+      <DependentUpon>frmValidateRejects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SpecialProcess\frmWOdata.resx">
+      <DependentUpon>frmWOdata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Support\CustomerWin.resx">
+      <DependentUpon>CustomerWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Support\frmSupManufModel.resx">
+      <DependentUpon>frmSupManufModel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\frmCollectPartAndRemapBOM.resx">
+      <DependentUpon>frmCollectPartAndRemapBOM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxAdminTools.resx">
+      <DependentUpon>SyxAdminTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxCollectAccessories.resx">
+      <DependentUpon>SyxCollectAccessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxCrystalReports.resx">
+      <DependentUpon>SyxCrystalReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxdataStatus.resx">
+      <DependentUpon>SyxdataStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxEditModel.resx">
+      <DependentUpon>SyxEditModel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxExcelReports.resx">
+      <DependentUpon>SyxExcelReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\syxImageLibrary.resx">
+      <DependentUpon>syxImageLibrary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxKitting.resx">
+      <DependentUpon>SyxKitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxPartsConsumption.resx">
+      <DependentUpon>SyxPartsConsumption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxPartsReceiving.resx">
+      <DependentUpon>SyxPartsReceiving.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxProduce.resx">
+      <DependentUpon>SyxProduce.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxQC.resx">
+      <DependentUpon>SyxQC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxRec.resx">
+      <DependentUpon>SyxRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxShipping.resx">
+      <DependentUpon>SyxShipping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxTechBilling.resx">
+      <DependentUpon>SyxTechBilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\syxtriage.resx">
+      <DependentUpon>syxtriage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Syx\SyxWIPTranser.resx">
+      <DependentUpon>SyxWIPTranser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Technician Tools\CreatePSSISNs.resx">
+      <DependentUpon>CreatePSSISNs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Technician Tools\frmCollectRepairFailCodes.resx">
+      <DependentUpon>frmCollectRepairFailCodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Technician Tools\frmLogicTrayAdmin.resx">
+      <DependentUpon>frmLogicTrayAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\AccessoryStatus.resx">
+      <DependentUpon>AccessoryStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmCompletedCS.resx">
+      <DependentUpon>frmCompletedCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmMainLens.resx">
+      <DependentUpon>frmMainLens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmMotoComponent.resx">
+      <DependentUpon>frmMotoComponent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmNewTech.resx">
+      <DependentUpon>frmNewTech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmNewTechData.resx">
+      <DependentUpon>frmNewTechData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmNewTechDataINPUT.resx">
+      <DependentUpon>frmNewTechDataINPUT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmNEWTechScreen.resx">
+      <DependentUpon>frmNEWTechScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TechScreen\frmTechScreen.resx">
+      <DependentUpon>frmTechScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TMI1\TMIRec.resx">
+      <DependentUpon>TMIRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TMI1\TMIRepairBilling.resx">
+      <DependentUpon>TMIRepairBilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TMI1\TMIReports.resx">
+      <DependentUpon>TMIReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TMI1\TMIShipReturnLabel.resx">
+      <DependentUpon>TMIShipReturnLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TMI1\TMISShipProduct.resx">
+      <DependentUpon>TMISShipProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TMI1\TMI_OBA.resx">
+      <DependentUpon>TMI_OBA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TMI1\TMI_QC.resx">
+      <DependentUpon>TMI_QC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\AssignBateryCover.resx">
+      <DependentUpon>AssignBateryCover.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmAdmin.resx">
+      <DependentUpon>frmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmAsignWHBoxToWHLoc.resx">
+      <DependentUpon>frmAsignWHBoxToWHLoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmBERScreen.resx">
+      <DependentUpon>frmBERScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmBuildAccessShipBox.resx">
+      <DependentUpon>frmBuildAccessShipBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmBuildShipPallet.resx">
+      <DependentUpon>frmBuildShipPallet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmCCRec.resx">
+      <DependentUpon>frmCCRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmDBRVerify.resx">
+      <DependentUpon>frmDBRVerify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmLabel.resx">
+      <DependentUpon>frmLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmManifestBERBoxes.resx">
+      <DependentUpon>frmManifestBERBoxes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmProdShip.resx">
+      <DependentUpon>frmProdShip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmRec.resx">
+      <DependentUpon>frmRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmRecExceptionUnits.resx">
+      <DependentUpon>frmRecExceptionUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmSoftwareRefurbish.resx">
+      <DependentUpon>frmSoftwareRefurbish.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmTFOOBA.resx">
+      <DependentUpon>frmTFOOBA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmTFRF.resx">
+      <DependentUpon>frmTFRF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmWHFillingOrder.resx">
+      <DependentUpon>frmWHFillingOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmWHManifest.resx">
+      <DependentUpon>frmWHManifest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\TracFone\frmWorkStationTrans.resx">
+      <DependentUpon>frmWorkStationTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmAssignAwaitParts.resx">
+      <DependentUpon>frmAssignAwaitParts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmChangePalletModel.resx">
+      <DependentUpon>frmChangePalletModel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmDockReceive.resx">
+      <DependentUpon>frmDockReceive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmDockShipping.resx">
+      <DependentUpon>frmDockShipping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmOrderfulfilment.resx">
+      <DependentUpon>frmOrderfulfilment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmPrintUPCLabel.resx">
+      <DependentUpon>frmPrintUPCLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmSendPalletPackingListFiles.resx">
+      <DependentUpon>frmSendPalletPackingListFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmStorage.resx">
+      <DependentUpon>frmStorage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmWarehouseRec.resx">
+      <DependentUpon>frmWarehouseRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmWarehouseRec_OEM.resx">
+      <DependentUpon>frmWarehouseRec_OEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Warehouse\frmWHRecWithoutFile.resx">
+      <DependentUpon>frmWHRecWithoutFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WeightFactorAdmin\frmWFadmin.resx">
+      <DependentUpon>frmWFadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmAssignWIPOwnership.resx">
+      <DependentUpon>frmAssignWIPOwnership.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmConditionalBucket.resx">
+      <DependentUpon>frmConditionalBucket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmProcessFlow.resx">
+      <DependentUpon>frmProcessFlow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmReadyToTransfer.resx">
+      <DependentUpon>frmReadyToTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmTemporarilyTransferWIPOwnership.resx">
+      <DependentUpon>frmTemporarilyTransferWIPOwnership.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmTransferDevices.resx">
+      <DependentUpon>frmTransferDevices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmWIPReports.resx">
+      <DependentUpon>frmWIPReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\WIP\frmWIPReports_1.resx">
+      <DependentUpon>frmWIPReports_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <None Include="app.config" />
+    <None Include="Crystal Reports\Cell Line Production.xsx">
+      <DependentUpon>Cell Line Production.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="PSS.Net.gclicx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

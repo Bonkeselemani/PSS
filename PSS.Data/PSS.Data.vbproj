@@ -1,0 +1,1430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.0.9466</ProductVersion>
+    <SchemaVersion>1.0</SchemaVersion>
+    <ProjectGuid>{D27626DF-992F-4906-8D36-88C9C3ECCDF8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>PSS.Data</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>PSS.Data</RootNamespace>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PSS.Data.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PSS.Data.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Private>False</Private>
+    </COMReference>
+    <ProjectReference Include="..\..\..\PSS.NET StandAlone\UnderWarrantyNET1\UnderWarrantyNET1.csproj">
+      <Name>UnderWarrantyNET1</Name>
+      <Project>{205C23EE-5756-48C5-9FCC-88B2F3E39EBD}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="CONN">
+      <Name>CONN</Name>
+      <HintPath>bin\CONN.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <Name>CrystalDecisions.CrystalReports.Engine</Name>
+      <HintPath>P:\Public\IT\References\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>P:\Public\IT\References\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="dbProvider">
+      <Name>dbProvider</Name>
+      <HintPath>bin\dbProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="DBQuery">
+      <Name>DBQuery</Name>
+      <HintPath>P:\Public\IT\References\DBQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EncDec">
+      <Name>EncDec</Name>
+      <HintPath>bin\EncDec.dll</HintPath>
+    </Reference>
+    <Reference Include="GuiLib">
+      <Name>GuiLib</Name>
+      <HintPath>..\..\DotNetAppRefs\GuiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IDAutomation.NetAssembly">
+      <Name>IDAutomation.NetAssembly</Name>
+      <HintPath>P:\Public\IT\References\IDAutomatiom\IDAutomation.NetAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <Name>Interop.Excel</Name>
+      <HintPath>P:\Public\IT\References\PSSNet References\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <Name>Interop.Office</Name>
+      <HintPath>bin\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <Name>Interop.VBIDE</Name>
+      <HintPath>..\PSS.Net\obj\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Odbc">
+      <Name>Microsoft.Data.Odbc</Name>
+      <HintPath>bin\Microsoft.Data.Odbc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyLib">
+      <Name>MyLib</Name>
+      <HintPath>..\..\DotNetAppRefs\MyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <Name>MySql.Data</Name>
+      <HintPath>P:\Public\IT\References\MySQL 5\MySQL Connector Net 1.0.10.1\.NET1.1\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Utilib">
+      <Name>Utilib</Name>
+      <HintPath>bin\Utilib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\App.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\BillingBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\CellularBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\CollectTrackingLog.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\CustBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\CustReceiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\ProductionTableBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses\StringFunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\ConfigFile.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ICustBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ICustReceiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\IDeviceMovement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Audit\Generic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\AMSReceiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\CSVFileProcessing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\DeviceMovement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\MsgDeviceMovement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\PalletFactory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\QaulityControl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\RefTables\FailCodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\SwProcessForDevice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\TNSIMMiscDataProvider.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\TNSIMOrders.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\TNSIMReceiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\WFMBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\WFMDevice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\WFMQualityControl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\WFMReceiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\WFMReporting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\WFMWarehouse.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BLL\WHBoxMovement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\CDMASim.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\GSMSim.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\lbillcodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\lbilling_points.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\lproduct.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\lproducttype.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\lwipowner.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\lwipownersubloc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\lwipowner_set2.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\sodetails.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\soheader.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcellopt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcostcenter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcustaggregatebilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tCustomer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcustomer_dispositions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcustomer_prod_locations.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcustomer_prod_workflow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tCustProductFailCodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcust_billing_points.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcust_order.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcust_order_item.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcust_sku.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tcust_sku_range.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tDevice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tDeviceBill.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tdevicecodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tdevice_question.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tdevice_swscreen_journal.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tdevice_triage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tdevice_workstation_journal.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tdispositions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tfailcode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tFailCodeType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\titem.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tlocation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tmessdata.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tmodel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tmodel_rec_status.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tmodel_sn_prefixes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tpallet.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tqc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tQuestion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\ttf_bx_phn_asn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\ttf_bx_phn_received.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tverdata.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\twarehousebox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\tworkorder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\warehouse_items.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\warehouse_receipt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\wh_bins.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\BOL\wh_box.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Accessories.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\AIG\AIG.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\AIG\AIGProduceShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\AIG\AIGReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ATCLESpecialBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Audit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\AutoBill.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\AutoBill_Prebill_InWIP.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\AvgPartsCost.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\BetterSearch.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\BillCode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\BillGroupsAdmin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Billing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\BillMapCheck.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Brightpoint.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\BulkShipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CellAdmin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CellModelFactor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CellStar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CellStarBER.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CellstarMisc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CellularBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\clsAvailForProd.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\clsProdTracker.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_BoxShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_FulfillOrder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_ProduceBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_Report.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_RfFlashTests.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_SpecialProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CoolPad\CoolPad_Swap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CreatePSSISNs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CreateRMA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CrystalReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\CustMaintNew.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DashBoardRpt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DBRManifest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DbrPartRecovery.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DockShipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DocumentMap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DriveCam.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DriveLine\DriveLine.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\DriveLine\DriveLinePrint.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\EmployeeIncentive.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ExcelReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\FileRec.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\FullFillment\WriteOrders.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\GameStopMessagingIncentivePrg.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\GameStopOpt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Generic.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\GenericProcess\clsGenericProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\GenericProcess\Model.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\GenericProcess\ModelFamily.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\GenericProcess\ProductGroup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Genesis\Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Genesis\Shipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\HR\EmployeeData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Inventory.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Legiant.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessAbacusData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessAdmin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessagingBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Messaging\AMSInfraStructure.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Messaging\AquisProdRec.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Messaging\Messaging.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Messaging\MessagingReportMore.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Messaging\MsgOpenLinesQueue.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Messaging\QA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessDemandData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessLabel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessMisc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessProdTracking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessReceive.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MessTrayManipulate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Misc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Mobilio\Mobilio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Mobilio\MobilioRec.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Mobilio\Mobilio_PutAway_FinishedGoods.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Mobilio\Mobilio_Reports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Mobilio\Mobilio_Shipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ModelTarget.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ModManuf.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MotoAsc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\MotorolaSubcontract_Biz.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Native Instruments\NI.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Native Instruments\NIDataManagement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Native Instruments\NIRec.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Native Instruments\NIRecShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Native Instruments\NIReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\NewTech.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\OrderFulfilment.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\PackingSlip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Pantech\CustomerServices.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Pantech\Pantech.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Pantech\Search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\PartRelated.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\PartsMap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Peek\Biz.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\PreTest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Pricing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ProdGrpCheck.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\PSSWrty\PSSWarranty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\QC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Receiving\ModelReceivingStatus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\RecWorksheet.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\RefurbAuditor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Reports\MySql5NavisionReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Reports\ReportsBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ReworkPallets.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\RptData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\RURPriceException.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SaleOrderData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ScanDeviceToCostCenter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ScrapParts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Search.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Security.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SecurityAdmin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SendPalletPackingListFiles.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Sensus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\ShipPalletReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SkullCandy\Skullcandy.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SkullCandy\Skullcandy2.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SkullCandy\SkullcandyPrint.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SkullCandy\SkullcandyRec.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SkyTel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SonitrolReceiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SpecialBilling.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\SpecialBillingDetails.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Syx\Syx.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Syx\SyxReceivingShipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Syx\SyxReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Syx\SyxWip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TextNow\TN.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TMI\TMI.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TMI\TMIRecShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TMI\TMIReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\mySQL5.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFKReports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_AdminFunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_BYOP_EDI.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_BYOP_Kitting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_BYOP_SimplePackProcess.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_KittedReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_Pack.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_PickPackShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_QC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_RAC_GIN.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_Relabel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_Ship.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFoneFulfillmentKit\TFFK_wareHouseBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\Admin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\BuildShipPallet.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\clsMisc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\Label.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\Receive.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\Reports.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\RFWrtyData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\TFBillingData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\TFTestBuildTriagedBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\TFTestTriage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TracFone\Warehouse.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\TransferDevices.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_BoxShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_FlashTest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_label.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_ProduceBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_REF2Seed.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_Report.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_RFTest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_SpecialKit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_SpecialProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vinsmart\Vinsmart_swap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_BuildBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_DeviceRecv.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_FulfillOrder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_Kitting.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_KittingSetup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_OnHold.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_PoRequest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_ProduceBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_Report.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Vivint\Vivint_WO_DockRecv.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Warehouse.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarehouseReceive.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarehouseRec_OEM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Warehouse\FacilityLocationManagement.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Warehouse\WHCharge.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\Alcatel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\FailCodesRepairCode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\Huawei.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\LG.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\ManageManufCodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\MClaim.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\MotoWarrantyBiz.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\MotoWarrantyData.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\Nokia.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\SamSungWrty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WarrantyClaim\ZTE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WFM\WFM.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WFM\WFMProduce.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_BoxShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_GenericSoftwareConfig.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_ProduceBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_REF2Seed.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_Report.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_SpecialKit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIKO\WIKO_SpecialProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_BoxShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_FlashTest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_Label.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_ProduceBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_REF2Seed.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_Report.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_RFTest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_SpecialKit.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_SpecialProject.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTechATT\WingTechATT_Swap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_BoxShip.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_ProduceBox.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_REF2Seed.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_Report.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_RfFlashTests.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_RFTest.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WingTech\WingTech_Swap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIP.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIPFlow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIPOwnershipTempTransfer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WIPStatusReport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\WorkDate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Buisness\Ziosk\Ziosk.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Connection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Connection5.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Jabil\Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Jabil\Shipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Joins.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lbillcodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lcctype.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lcodesdetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lcodesmaster.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lcoinfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lcountry.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lcustrec.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lfailcodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\llaborlvl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lmanuf.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lmanufwrty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lmetrocall.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lparentco.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lparts.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lpgtype.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lpricingtype.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lprodgrp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lproduct.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lpsflatprice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lrepaircodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lshipmethod.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lstate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Lookup\lwcloc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\MySql4.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\ReplicationConnection.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Security\rusertogroup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Security\tgroup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Security\tlevel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Security\tpermissions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Security\tscreen.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Security\tusers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\AssignCostCenter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\Billing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\CostCenterTimeTracking.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\Misc.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\MotorolaSubcontract_Data.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\Receiving.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\Shipping.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tbillmap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tcellopt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tcomplaint.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tcreditcard.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tcustmarkup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tcustomer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tcusttoprice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tcustwrty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tdevice.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tdevicebill.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tdevicecodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tdevicejournal.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tdevicemetro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tdeviceopt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tdevicewrty.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tfailcodes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tlocation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tmetrocalldetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tmodel.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tpartsmap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tpreloadcust.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tpreloadwo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tpreloadwodata.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tpurchaseorder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tship.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tshipbill.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tshipchange.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tshipto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tsku.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tstagedetail.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\ttray.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\tworkorder.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Transaction\twrtymap.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Production\Web\webcustinfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Production\Transaction\tcusttoprice.resx">
+      <DependentUpon>tcusttoprice.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
